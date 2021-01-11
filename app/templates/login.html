@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent" class="d-flex justify-content-center align-self-center mt-5">
+    <!-- Tabs Titles -->
+
+    <!-- Login Form -->
+    <form action="/signin" method="post">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="username">
+      <br/>
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+      <br/>
+
+      <input type="hidden" name="client_id" value="{{ client_id }}">
+                  <input type="hidden" name="redirect_url" value="{{ redirect_url }}">
+                  <input type="hidden" name="state" value="{{state}}"/>
+                  <input type="hidden" name="response_type" value="{{ response_type }}">
+
+
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+  </div>
+</div>  
+        
+        <script src="" async defer></script>
+    </body>
+</html>
