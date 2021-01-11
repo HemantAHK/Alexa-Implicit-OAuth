@@ -1,0 +1,5 @@
+Flask-WTF
+pyjwt==1.7.1
+cryptography
+logzero
+pip
