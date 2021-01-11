@@ -1,9 +1,9 @@
-#FROM tiangolo/meinheld-gunicorn-flask:python3.8
+FROM tiangolo/meinheld-gunicorn-flask:python3.8
 
-FROM tiangolo/uwsgi-nginx-flask:python3.8
-
+RUN apt-get update -y 
 RUN apt-get install curl
 RUN apt-get install apt-transport-https
+RUN apt-get install ca-certificates -y
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
 RUN curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
 
